@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AnswerButton extends StatelessWidget {
   const AnswerButton(this.answerText, this.onTap, {super.key});
@@ -15,10 +16,17 @@ class AnswerButton extends StatelessWidget {
           vertical: 10,
           horizontal: 40,
         ),
-        backgroundColor: const Color.fromARGB(255, 7, 52, 88),
+        backgroundColor: const Color.fromARGB(255, 4, 38, 66),
         foregroundColor: Colors.white,
       ),
-      child: Text(answerText),
+      child: Text(
+        answerText,
+        textAlign: TextAlign.center,
+        style: GoogleFonts.robotoCondensed(
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
     );
   }
 }
